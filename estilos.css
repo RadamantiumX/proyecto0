@@ -25,7 +25,7 @@ header{
 	height: 100vh;
 	/*este borde servia solo como referencia*/
 	/*border: solid thin #d41e11;*/
-	background-image: linear-gradient(to top, rgba(161, 140, 209, 0.404) 0%, rgba(251, 193, 234, 0.404) 100%), url(img/fondo-bar.jpg);
+	background-image: linear-gradient(135deg,#020024 0,#5656b9 86%,#00d4ff 100%);
 	/*Con esta propiedad respeta el tamaño original de la imagen*/
 	background-size: cover;
 	/*Para que no se repita en pantallas muy grandes*/
