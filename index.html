@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Archivo CSS-->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<!--Fin Archivo CSS-->
+	<!--BOXICONS-->
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<!--Fin BOXICONS-->
+	<!--Fuentes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+	<!--Fin Fuentes-->
+	<title>Proyecto0</title>
+</head>
+<body>
+	
+	<header class="header" id="inicio">
+      <!--Inicio Portada-->
+		<!--Menu Hamburguesa-->
+		<img src="iconos/bx-menu-alt-right.svg" class="hamburguer">
+		<!--Fin Menu Hamburguesa-->
+
+		<!--Menu de navegacion-->
+		<nav class="menu-navegacion">
+			<a href="#inicio">Inicio</a>
+			<a href="#servicio">Servicio</a>
+			<a href="#portafolio">Portafolio</a>
+			<a href="#expertos">Expertos</a>
+			<a href="#contactos">Contacto</a>
+		</nav>
+		<!--Fin Menu de navegacion-->
+
+		<div class="contenedor head">
+			<h1 class="titulo">Convertimos tus proyectos en realidad</h1>
+			<p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, cumque?</p>
+		</div>
+	 <!--Fin de portada-->
+	</header>
+     
+	<main>
+		<section class="contenedor" id="servicio">
+			<!--Inicio de Seccion SERVICIOS-->
+			<h2 class="subtitulo">Nuestro Servicio</h2>
+			<div class="contenedor-servicio">
+				<!--Ilustracion-->
+				<img src="iconos/Checklist_Isometric.svg">
+				<div class="checklist-servicio">
+					<div class="service">
+						<h3 class="n-service"><span class="number">1</span> Diseño Web</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo accusamus odit modi, officia at, necessitatibus itaque? Delectus recusandae facere ipsum!</p>
+					</div>
+					<div class="service">
+						<h3 class="n-service"><span class="number">2</span> Diseño Web</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo accusamus odit modi, officia at, necessitatibus itaque? Delectus recusandae facere ipsum!</p>
+					</div>
+					<div class="service">
+						<h3 class="n-service"><span class="number">3</span> Diseño Web</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo accusamus odit modi, officia at, necessitatibus itaque? Delectus recusandae facere ipsum!</p>
+					</div>
+				</div>
+
+			</div>
+			<!--Fin de Seccion SERVICIOS-->
+		</section>
+
+		<section class="gallery" id="portafolio">
+			<!--Inicio de Seccion GALERIA-->
+			<div class="contenedor">
+				<h2 class="subtitulo">Galeria</h2>
+				<!--Contenedor de imagenes-->
+				<div class="contenedor-galeria">
+					<img src="img/1.jpg" class="img-galeria">
+					<img src="img/2.jpg" class="img-galeria">
+					<img src="img/3.jpg" class="img-galeria">
+					<img src="img/4.jpg" class="img-galeria">
+					<img src="img/5.jpg" class="img-galeria">
+					<img src="img/6.jpg" class="img-galeria">			
+				</div>
+				
+			</div>
+            <!--Fin de Seccion SERVICIOS-->
+		</section>
+
+		<section class="image-light">
+			<!--Inicio Seccion de VISUALIZACION de imagenes-->
+
+			<!--Icono "cerrar ventana"-->
+			<img src="iconos/bx-x.svg" class="close">
+
+			<img src="img/1.jpg" class="agregar-imagen">
+			<!--Fin Seccion de VISUALIZACION de imagenes-->
+		</section>
+
+		<section class="contenedor" id="expertos">
+
+			<!--Inicio Seccion EXPERTOS-->
+			<h2 class="subtitulo">Expertos en:</h2>
+			 <section class="experts">
+
+			 	<div class="cont-experts">
+			 		<img src="img/Pie Chart_Isometric.svg">
+			 	     <h3 class="n-expert">Analytics</h3>
+			 	</div>
+			 	<div class="cont-experts">
+			 		<img src="iconos/Search engine_Isometric.svg">
+			 	     <h3 class="n-expert">SEO</h3>
+			 	</div>
+			 	<div class="cont-experts">
+			 		<img src="iconos/Security_Isometric.svg">
+			 	     <h3 class="n-expert">Security</h3>
+			 	</div>
+
+			 </section>
+			 <!--Fin Seccion EXPERTOS-->
+
+		</section>
+	</main>
+
+	<footer id="contactos">
+		<div class="contenedor footer-content">
+			<div class="contact-us">
+				<h2 class="brand">Eduardo Arede</h2>
+				<p>Somos expertos en crear sueños</p>
+			</div>
+			<div class="social-media">
+				<!--Accedemos a los Iconos en BOXICONS.COM // Copiamos la "font" de las redes sociales-->
+				<a href="https://www.facebook.com/eduardo.arede.3/" class="social-media-icon" target="new"><i class='bx bxl-facebook-circle'></i></a>
+				<a href="https://twitter.com/AredeEduardo" class="social-media-icon" target="new"><i class='bx bxl-twitter' ></i></a>
+				<a href="https://www.instagram.com/edu_4rede/?hl=es-la" class="social-media-icon" target="new"><i class='bx bxl-instagram' ></i></a>
+			</div>
+		</div>
+		<div class="line"></div>
+	</footer>
+
+   <!--JAVASCRIPT-->
+	<!--Galeria de imagenes-->
+	<script type="text/javascript" src="javascript/galeria.js"></script>
+
+	<!--Menu desplegable-->
+	<script type="text/javascript" src="javascript/menu.js"></script>
+   <!--Fin JAVASCRIPT-->
+	
+</body>
+</html>
