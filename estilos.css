@@ -1,0 +1,492 @@
+/*Seteamos los valores por defecto del navegador con el selector universal asterisco*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+/*Incluimos las fuentes que importamos (Google Fonts) en el BODY*/
+body{
+     font-family: "Ubuntu", sans-serif; 
+}
+
+/*Comportamiento del SCROLL*/
+
+:root{
+	scroll-behavior: smooth;
+}
+
+/*-------------------------*/
+
+/*PRINCIPIO DE ESTILOS DE LA PORTADA*/
+header{
+	/*Con el "vh" obtenemos la altura del dispositivo*/
+	height: 100vh;
+	/*este borde servia solo como referencia*/
+	/*border: solid thin #d41e11;*/
+	background-image: linear-gradient(to top, rgba(161, 140, 209, 0.404) 0%, rgba(251, 193, 234, 0.404) 100%), url(img/fondo-bar.jpg);
+	/*Con esta propiedad respeta el tamaño original de la imagen*/
+	background-size: cover;
+	/*Para que no se repita en pantallas muy grandes*/
+	background-repeat: no-repeat;
+	/*fijamos la imagen cuando hacemos scroll*/
+	background-attachment: fixed;
+	/*centramos la imagen*/
+	background-position: center;
+}
+
+/*Menu hamburguesa*/
+.hamburguer{
+	/*Fijamos la imagen*/
+	position: fixed;
+	/*Marcamos cuanto tiene que tener arriba*/
+	top: 30px;
+	right: 30px;
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 0 6px rgba(0, 0, 0,0.5);
+}
+
+/*Menu desplegable*/
+.menu-navegacion{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	/*Establecemos la imagen de fondo que es un color degradado*/
+	background-image: linear-gradient(135deg,#667eea 0,#764ba2 100%);
+	/*Acomodamos los elementos*/
+	display: flex;
+	/*Los dejamos en columna*/
+	flex-direction: column;
+	/*Con esto se separaran uno de otro los elementos*/
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	transition: transform .3s ease-in-out;
+	/*Trasladamos, lo ocultamos con ese valor, con valor "0" se vuelve a mostrar*/
+	transform: translate(100%);
+}
+
+.menu-navegacion a{
+	color: #fff;
+	text-decoration: none; 
+}
+
+/*Centramos el contenedor*/
+.contenedor{
+	width: 90%;
+	max-width: 1200px;
+	/*Ocultamos el contenido sobresaliente del elemento*/
+	overflow: hidden;
+	margin: auto;
+	/*Arriba/abajo y los costados*/
+	padding: 60px 0;
+	
+}
+
+/*Segunda clase del Contenedor*/
+.head{
+	padding: 0;
+	/*Ocupamos toda la altura*/
+	height: 100%;
+	/*Acomodamos los elementos*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*Columnas de elementos (No uno al lado de otro)*/
+	flex-direction: column;
+
+	color: #fff;
+	text-align: center;
+}
+
+.titulo{
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+.copy{
+	font-weight: 300;
+	font-size: 25px;
+
+}
+
+/*Solo estara activa con el clic en el menu hamburgesa
+Aparece el menu de navegacion*/
+.spread{
+    transform: translate(0);
+
+}
+/*FIN DE LOS ESTILOS DE PORTADA*/
+
+/*ESTILOS SECCION DE SERVICIOS*/
+
+.subtitulo{
+	text-align: center;
+	font-weight: 300;
+	color: #9f8ad0;
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+.contenedor-servicio{
+	
+	/*Acomodamos los elementos*/
+	display: flex;
+	justify-self: space-evenly;
+	align-items: center;
+	/*Para el responsive*/
+	flex-wrap: wrap;
+	
+}
+
+/*Accedemos a la imagen*/
+.contenedor-servicio img{
+	width: 40%;
+}
+
+.checklist-servicio{
+     width: 45%;
+}
+
+/*Contenedores de etiquetas H3 y p*/
+.service{
+	/*Separacion debajo de cada contenedor*/
+	margin-bottom: 20px;
+
+}
+
+.n-service{
+	/*Agregamos un espacio en el subtitulo*/
+	margin-bottom: 7px;
+	color: #9f8ad0;
+}
+
+.number{
+	display: inline-block;
+	background-image: linear-gradient(to top, #a18cd1 0, #fbc2eb 100%);
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	/*Para hacerlo circular*/
+	border-radius: 50%;
+	font-weight: 700;
+	/*Para centrar el numero*/
+	line-height: 30px;
+	margin-right: 5px;
+}
+
+/*FIN DE ESTILOS SECCION SERVICIOS*/
+
+/*INICIO ESTILOS SECCION GALERIA*/
+
+.gallery{
+	background-color: #f2f2f2;
+
+}
+
+.contenedor-galeria{
+	/*Acomodamos los elementos*/
+	display: flex;
+	justify-content: space-evenly;
+	/*Para el responsive*/
+	flex-wrap: wrap;
+}
+
+.img-galeria{
+	/*Porcentaje de pantalla*/
+	width: 30%;
+	display: block;
+	margin-top: 15px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	/*Conservamos el tamaño original de la imagenes*/
+	object-fit: cover;
+
+
+}
+
+/*FIN DE ESTILOS SECCION GALERIA*/
+
+/*INICIO ESTILOS SECCION DE VISUALIZACION DE IMAGENES*/
+/*Se mostraran las imagen con el estilo MODAL por encima del contenido*/
+
+.image-light{
+	/*La fijamos en la pantalla*/
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	/*Expandimos*/
+	top: 0;
+	left: 0;
+	/*Acomodamos la imagen*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*Transicion para que aparezca la imagen*/
+	text-replace: transform .2s ease-in-out;
+	/*Ocultamos la imagen, o la mostramos*/
+	transform: translate(100%);
+
+}
+
+.agregar-imagen{
+	/*Para conservar el tamaño*/
+	object-fit: cover;
+	width: 60%;
+	border-radius: 10px;
+	transform: scale(0);
+	transition: transform .3s .2s;
+}
+
+/*Icono de cierre*/
+.close{
+	/*Acomodamos en la parte superior*/
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     width: 40px;
+     cursor: pointer;  
+}
+
+/*"Activables": Solo se activaran con JS "galeria.js" para mostrar la imagen*/
+.showImage{
+     transform: scale(1);
+
+}
+.show{
+	transform: translate(0);
+}
+/*--------------------------FIN "Activables"---------------------------------*/
+
+
+/*FIN ESTILOS SECCION DE VISUALIZACION DE IMAGENES*/
+
+/*INICIO ESTILOS SECCION EXPERTOS*/
+
+.experts{
+	/*Acomodamos los elementos*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.cont-experts{
+	width: 30%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.cont-experts img{
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+.n-expert{
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+	/*Quitamos un poco de grosor en la fuente*/
+	font-weight: 400;
+
+}
+
+/*FIN ESTILOS SECCION EXPERTOS*/
+
+/*INICIO ESTILOS FOOTER*/
+
+footer{
+	background-color: #9f8ad0;
+	padding-bottom: 0.1px;
+}
+
+.footer-content{
+	/*Acomodamos los elementos*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 60px;
+	padding-bottom: 40px;
+
+}
+
+.contact-us{
+	width: 40%;
+	color: #fff;
+}
+
+.brand{
+	font-weight: 500;
+	font-size: 40px;
+
+}
+
+.contact-us p{
+	font-weight: 500;
+}
+
+.social-media{
+	width: 50%;
+	display: flex;
+	/*Lo ubicamos al final*/
+	justify-content: flex-end;
+	color: #000;
+}
+
+.social-media-icon{
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	border: solid 1px #fff;
+	/*Lo hacemos redondo*/
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+}
+
+.social-media-icon:hover{
+	background-color: #fff;
+	color: #764ba2;
+}
+
+.social-media-icon i{
+	width: 70%;
+	height: 70%;
+	text-align: center;
+	line-height: 60px;
+}
+
+/*--Linea divisoria--*/
+.line{
+	width: 90%;
+	max-width: 1200px;
+	/*Lo centramos*/
+	margin: 0 auto;
+     height: 2px;
+     background-color: #fff;
+     margin-bottom: 60px;
+}
+/*--------Fin--------*/
+
+/*FIN ESTILOS FOOTER*/
+
+/*Inicio MEDIA QUERYS*/
+/*Cuando sea menor a 800 pixeles*/
+@media screen and (max-width: 800px){
+	.menu-navegacion{
+		width: 50vw;
+	}
+	.titulo{
+		font-size: 40px;
+	}
+
+	.contenedor-servicio img{
+		width: 80%;
+		margin-bottom: 40px;
+	}
+
+	.checklist-servicio{
+		width: 80%;
+	}
+	.service{
+		margin-bottom: 30px;
+	}
+
+	.agregar-imagen{
+		width: 80%;
+	}
+
+	.img-galeria{
+		width: 45%;
+	}
+
+	.cont-experts{
+          width: 80%;
+
+	}
+
+	.footer-content{
+		justify-content: center;
+	}
+
+	.social-media{
+		width: 80%;
+		justify-content: space-evenly;
+
+	}
+
+	.social-media-icon{
+		margin-left: 0;
+	}
+
+	.social-media i{
+		margin-left: 0;
+	}
+
+	.contact-us{
+		text-align: center;
+		width: 80%;
+		margin-bottom: 40px;
+	}
+/*---------------FIN------------------*/
+
+/*---Cuando sea menor a 500 pixeles----*/
+
+@media screen and (max-width: 500px) {
+	.menu-navegacion{
+		width: 65vw;
+	}
+
+	.agregar-imagen{
+		width: 95%;
+	}
+
+	.hamburguer{
+		/*Para evitar margenes muy extensos*/
+		top: 20px;
+		right: 20px;
+	}
+
+	.titulo{
+		font-size: 30px;
+	}
+
+	.subtitulo{
+		font-size: 30px;
+	}
+
+	.img-galeria{
+		/*Que ocupe casi el total de la pantalla las imagenes de la galeria*/
+		width: 95%;
+	}
+
+	.social-media{
+		width: 100%;
+	}
+
+	.contact-us{
+		width: 90%;
+	}
+
+
+}
+
+/*---------------FIN------------------*/
+}
+
+
+/*Fin MEDIA QUERYS*/
