@@ -60,16 +60,19 @@ header{
 	/*Con esto se separaran uno de otro los elementos*/
 	justify-content: space-evenly;
 	align-items: center;
-	
-	
-	/*Trasladamos, lo ocultamos con ese valor, con valor "0" se vuelve a mostrar*/
-	transform: translate(0);
 	float: right;
 }
 
 .menu-navegacion a{
 	color: #000;
-	text-decoration: none; 
+	text-decoration: none;
+	font-size: 20px; 
+}
+
+.menu-navegacion a:hover{
+	font-weight: 400;
+	color: #B66D47;
+
 }
 
 /*Centramos el contenedor*/
