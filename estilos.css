@@ -134,8 +134,8 @@ Aparece el menu de navegacion*/
 
 .subtitulo{
 	text-align: center;
-	font-weight: 300;
-	color: #9f8ad0;
+	font-weight: 600;
+	color: #274196;
 	margin-bottom: 40px;
 	font-size: 40px;
 }
@@ -143,33 +143,35 @@ Aparece el menu de navegacion*/
 	
 	/*Acomodamos los elementos*/
 	display: flex;
-	justify-self: space-evenly;
+	justify-self: space-between;
 	align-items: center;
 	/*Para el responsive*/
 	flex-wrap: wrap;
-	
+	width: 100%;
+     height: 500px;
+     flex-direction: row;
 }
 
-/*Accedemos a la imagen*/
-.contenedor-servicio img{
-	width: 40%;
-}
 
-.checklist-servicio{
-     width: 45%;
-}
+
+
+
 
 /*Contenedores de etiquetas H3 y p*/
 .service{
+	width: 33%;
+	height: 100%;
 	/*Separacion debajo de cada contenedor*/
 	margin-bottom: 20px;
+	border: solid 1px #274196;
+	border-radius: 5%;
 
 }
 
 .n-service{
 	/*Agregamos un espacio en el subtitulo*/
 	margin-bottom: 7px;
-	color: #9f8ad0;
+	color: #274196;
 }
 
 .number{
