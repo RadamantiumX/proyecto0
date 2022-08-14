@@ -135,11 +135,76 @@ Aparece el menu de navegacion*/
 }
 /*FIN DE LOS ESTILOS DE PORTADA*/
 
+
+
 /*ESTILOS SECCION DE SERVICIOS*/
+.titulo-plan{
+	text-align: center;
+	font-size: 50px;
 
+}
+.pricing{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 50px;
+}
+.nivel{
+	font-size: 30px;
+}
+.precio{
+	position: relative;
+}
+.peso{
+	position: absolute;
+	left: -2px;
+	color: #8e8e8e;
 
+}
+.numero{
+	font-size: 60px;
+	font-weight: 600;
+}
+.mes{
+	color: #8e8e8e;
+	font-size: 15px;
+}
+.tabla{
+	background-color: #ccc;
+	padding: 30px;
+}
+.caracteristicas{
+	font-size: 20px;
+
+}
+.caracteristicas p{
+     margin-top: 20px;
+}
+.tabla a{
+	background-color: violet;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 22px;
+	margin-top: 20px;
+	display: block;
+}
+.silver{
+	color: #bbc2cc;
+
+}
+.gold{
+	color: #cd9900;
+  
+}
+.premium{
+	color: #0cab71;
+
+}
 
 /*FIN DE ESTILOS SECCION SERVICIOS*/
+
+
+
 
 /*INICIO ESTILOS SECCION GALERIA*/
 
