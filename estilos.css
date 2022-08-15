@@ -74,7 +74,10 @@ header{
 .register{
 	border: solid 1px #000;
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 15px;
+}
+.register:hover{
+	background-color: #bfed28;
 }
 
 
@@ -128,6 +131,22 @@ header{
 	font-weight: 300;
 	font-size: 25px;
 
+}
+.btn-start{
+	margin-top: 20px;
+	text-decoration: none;
+	display: block;
+	font-size: 30px;
+	background-color: #d40d45;
+	color: #fff;
+	width: 300px;
+	border: solid 2px #b528ed;
+	border-radius: 25px;
+	font-weight: 600;
+
+}
+.btn-start:hover{
+	background-color:#e8275e;	
 }
 
 /*Solo estara activa con el clic en el menu hamburgesa
@@ -220,7 +239,8 @@ Aparece el menu de navegacion*/
 }
 .tabla-media{
 	height: 500px;
-	margin: auto;	
+	margin: auto;
+	background-image: url(iconos/golden-star-background.png);	
 }
 
 
