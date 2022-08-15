@@ -250,91 +250,33 @@ Aparece el menu de navegacion*/
 
 
 
-/*INICIO ESTILOS SECCION GALERIA*/
-
-.gallery{
-	background-color: #f2f2f2;
-
+/*INICIO ESTILOS SECCION DOMINIO*/
+.domain{
+	background-color: #d8dbe6;
 }
-
-.contenedor-galeria{
-	/*Acomodamos los elementos*/
-	display: flex;
-	justify-content: space-evenly;
-	/*Para el responsive*/
-	flex-wrap: wrap;
-}
-
-.img-galeria{
-	/*Porcentaje de pantalla*/
-	width: 30%;
-	display: block;
-	margin-top: 15px;
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-	cursor: pointer;
-	/*Conservamos el tamaño original de la imagenes*/
-	object-fit: cover;
-
-
-}
-
-/*FIN DE ESTILOS SECCION GALERIA*/
-
-/*INICIO ESTILOS SECCION DE VISUALIZACION DE IMAGENES*/
-/*Se mostraran las imagen con el estilo MODAL por encima del contenido*/
-
-.image-light{
-	/*La fijamos en la pantalla*/
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.6);
+.cont-formu{
 	width: 100%;
-	height: 100%;
-	/*Expandimos*/
-	top: 0;
-	left: 0;
-	/*Acomodamos la imagen*/
+}
+.form-domain{
+	margin-top: 40px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
+	
+	justify-content: space-between;
+}
+.form-domain input{
 
-	/*Transicion para que aparezca la imagen*/
-	text-replace: transform .2s ease-in-out;
-	/*Ocultamos la imagen, o la mostramos*/
-	transform: translate(100%);
-
+	width: 100%;
+	height: 40px;
+}
+.btn-buscar{
+	margin-left: 10px;
+	width: 200px;
 }
 
-.agregar-imagen{
-	/*Para conservar el tamaño*/
-	object-fit: cover;
-	width: 60%;
-	border-radius: 10px;
-	transform: scale(0);
-	transition: transform .3s .2s;
-}
-
-/*Icono de cierre*/
-.close{
-	/*Acomodamos en la parte superior*/
-     position: absolute;
-     top: 15px;
-     right: 15px;
-     width: 40px;
-     cursor: pointer;  
-}
-
-/*"Activables": Solo se activaran con JS "galeria.js" para mostrar la imagen*/
-.showImage{
-     transform: scale(1);
-
-}
-.show{
-	transform: translate(0);
-}
-/*--------------------------FIN "Activables"---------------------------------*/
+/*FIN DE ESTILOS SECCION DOMINIO*/
 
 
-/*FIN ESTILOS SECCION DE VISUALIZACION DE IMAGENES*/
 
 /*INICIO ESTILOS SECCION EXPERTOS*/
 
