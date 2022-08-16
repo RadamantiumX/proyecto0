@@ -314,15 +314,27 @@ Aparece el menu de navegacion*/
 }
 
 /*FIN DE ESTILOS SECCION DOMINIO*/
-.contact{
-	display: flex;
-	flex-direction: row;
-}
-
 
 /*INICIO ESTILOS SECCION CONTACTO*/
 
+.contact{
+	display: flex;
+	
+	margin: auto;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+.titulo-contacto{
+	font-size: 30px;
+	margin: auto;
 
+}
+.img-contacto{
+	width: 30%;
+	display: block;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	object-fit: cover;
+}
 
 /*FIN ESTILOS SECCION CONTACTO*/
 
@@ -405,109 +417,4 @@ footer{
 
 /*FIN ESTILOS FOOTER*/
 
-/*Inicio MEDIA QUERYS*/
-/*Cuando sea menor a 800 pixeles*/
-@media screen and (max-width: 800px){
-	.menu-navegacion{
-		width: 50vw;
-	}
-	.titulo{
-		font-size: 40px;
-	}
 
-	.contenedor-servicio img{
-		width: 80%;
-		margin-bottom: 40px;
-	}
-
-	.checklist-servicio{
-		width: 80%;
-	}
-	.service{
-		margin-bottom: 30px;
-	}
-
-	.agregar-imagen{
-		width: 80%;
-	}
-
-	.img-galeria{
-		width: 45%;
-	}
-
-	.cont-experts{
-          width: 80%;
-
-	}
-
-	.footer-content{
-		justify-content: center;
-	}
-
-	.social-media{
-		width: 80%;
-		justify-content: space-evenly;
-
-	}
-
-	.social-media-icon{
-		margin-left: 0;
-	}
-
-	.social-media i{
-		margin-left: 0;
-	}
-
-	.contact-us{
-		text-align: center;
-		width: 80%;
-		margin-bottom: 40px;
-	}
-/*---------------FIN------------------*/
-
-/*---Cuando sea menor a 500 pixeles----*/
-
-@media screen and (max-width: 500px) {
-	.menu-navegacion{
-		width: 65vw;
-	}
-
-	.agregar-imagen{
-		width: 95%;
-	}
-
-	.hamburguer{
-		/*Para evitar margenes muy extensos*/
-		top: 20px;
-		right: 20px;
-	}
-
-	.titulo{
-		font-size: 30px;
-	}
-
-	.subtitulo{
-		font-size: 30px;
-	}
-
-	.img-galeria{
-		/*Que ocupe casi el total de la pantalla las imagenes de la galeria*/
-		width: 95%;
-	}
-
-	.social-media{
-		width: 100%;
-	}
-
-	.contact-us{
-		width: 90%;
-	}
-
-
-}
-
-/*---------------FIN------------------*/
-}
-
-
-/*Fin MEDIA QUERYS*/
