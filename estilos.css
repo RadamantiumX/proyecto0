@@ -45,6 +45,8 @@ header{
 	 height: 7%;
 	 background-color: #fff;
 	 z-index: 99;
+	 border:solid 0.8px #f5f5f5;
+	 box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 /*Menu desplegable*/
@@ -74,7 +76,7 @@ header{
 .register{
 	border: solid 1px #000;
 	padding: 5px;
-	border-radius: 15px;
+	border-radius: 25px;
 }
 .register:hover{
 	background-color: #bfed28;
@@ -166,6 +168,7 @@ Aparece el menu de navegacion*/
 
 }
 .pricing{
+
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -242,6 +245,21 @@ Aparece el menu de navegacion*/
 	margin: auto;
 	background-image: url(iconos/golden-star-background.png);	
 }
+.btn-help{
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	background-color: #d40d45;
+	color: #fff;
+	width: 200px;
+	border: solid 2px #b528ed;
+	border-radius: 25px;
+	font-weight: 600;
+	margin: auto;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -276,6 +294,7 @@ Aparece el menu de navegacion*/
 	border: solid 0.9px #b528ed;
 	border-radius: 25px;
 	text-indent: 15px;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 
 
 }
@@ -287,45 +306,25 @@ Aparece el menu de navegacion*/
 	border: solid 2px #b528ed;
 	border-radius: 25px;
 	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+.btn-buscar:hover{
+	background-color:#e8275e ;
 }
 
 /*FIN DE ESTILOS SECCION DOMINIO*/
-
-
-
-/*INICIO ESTILOS SECCION EXPERTOS*/
-
-.experts{
-	/*Acomodamos los elementos*/
+.contact{
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-
+	flex-direction: row;
 }
 
-.cont-experts{
-	width: 30%;
-	text-align: center;
-	margin-bottom: 20px;
-}
 
-.cont-experts img{
-	width: 80%;
-	display: block;
-	margin: auto;
-}
+/*INICIO ESTILOS SECCION CONTACTO*/
 
-.n-expert{
-	display: inline-block;
-	margin-top: 20px;
-	width: 100%;
-	/*Quitamos un poco de grosor en la fuente*/
-	font-weight: 400;
 
-}
 
-/*FIN ESTILOS SECCION EXPERTOS*/
+/*FIN ESTILOS SECCION CONTACTO*/
 
 /*INICIO ESTILOS FOOTER*/
 
